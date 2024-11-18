@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Music App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src=""></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Sangeet Music Explorer</h1>
+    <p>Discover genres and enjoy your favorite tunes</p>
+  </header>
+
+  <main>
+    <div id="genres">
+      <h2>Genres</h2>
+      <button class="genre-button" data-genre="rock">Rock</button>
+      <button class="genre-button" data-genre="pop">Pop</button>
+      <button class="genre-button" data-genre="jazz">Jazz</button>
+    </div>
+
+    <div id="playlist">
+      <h2>Playlist</h2>
+      <div id="song-names"></div> <!-- Song names displayed here -->
+      <ul></ul>
+    </div>
+
+    <div id="player">
+      <h2>Now Playing</h2>
+      <div id="album-cover">
+        <!-- Album cover will appear here -->
+      </div>
+      <div id="song-info">
+        <p id="artist-name">Artist Name</p>
+        <p id="song-title">Song Title</p>
+      </div>
+      <audio id="audio-player" controls>
+        <source src="" type="audio/mpeg">
+      </audio>
+      <div class="control-buttons">
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button>
+        <button id="next-button">Next</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Music Explorer cited from Youtube and Google for music and images</p>
+  </footer>
+</body>
+</html>
